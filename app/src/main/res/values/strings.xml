@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EggTimerApp</string>
+    <string name="button_soft_egg_image_description">Button Soft Egg - Image Description</string>
+    <string name="button_medium_egg_image_description" >Button Medium Egg - Image Description</string>
+    <string name="button_hard_egg_image_description" >Button Hard Egg - Image Description</string>
+    <string name="text_done">DONE!</string>
+
+
+</resources>

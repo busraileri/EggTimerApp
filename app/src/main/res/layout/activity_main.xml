@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FE9700"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnSoft"
+        android:layout_width="99dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/button_soft_egg_image_description"
+        android:onClick="onImageButtonClick"
+        app:layout_constraintEnd_toStartOf="@+id/btnMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEgg"
+        app:srcCompat="@drawable/soft_egg" />
+
+    <ImageButton
+        android:id="@+id/btnMedium"
+        android:layout_width="99dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/button_medium_egg_image_description"
+        android:onClick="onImageButtonClick"
+        app:layout_constraintEnd_toStartOf="@+id/btnHard"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toEndOf="@+id/btnSoft"
+        app:layout_constraintTop_toBottomOf="@+id/textEgg"
+        app:srcCompat="@drawable/medium_egg" />
+
+    <ImageButton
+        android:id="@+id/btnHard"
+        android:layout_width="99dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/button_hard_egg_image_description"
+        android:onClick="onImageButtonClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMedium"
+        app:layout_constraintTop_toBottomOf="@+id/textEgg"
+        app:srcCompat="@drawable/hard_egg" />
+
+
+    <TextView
+        android:id="@+id/textEgg"
+        android:layout_width="254dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="88dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:gravity="center_horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/custom_progress_bar"
+        android:max="100"
+        android:progress="0"
+        android:layout_width="270dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMedium"
+        app:layout_constraintVertical_bias="0.869" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
